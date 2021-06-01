@@ -1,0 +1,58 @@
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+    top: 7.5vh;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #d6d6d6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: #ffa200;
+    color: #fff;
+    text-decoration: none;
+}
+.owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 10px;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    outline: none;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 1rem 1rem;
+    background: #d6d6d6;
+    display: block;
+    backface-visibility: visible;
+    transition: opacity 0.2s ease;
+    border-radius: 50%;
+    transition: all 0.05s linear;
+    outline: none;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ddb321;
+    width: 15px;
+    height: 15px;
+    transform: translate(0, 12.5%);
+    outline: none;
+}

@@ -1,0 +1,391 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
+        <title>Lamborghini Gallery</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="owl.dots.css" />
+        <link rel="stylesheet" href="owl.carousel.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <nav class="main-nav">
+                    <div class="megamenu">
+                        <div class="header-container">
+                            <h3 id="megamenu__h3">
+                                <span>Lamborghini</span> Gallery
+                            </h3>
+                            <h2 id="megamenu__h2">Search in the <br />website</h2>
+                            <form action="#" method="get">
+                                <input
+                                    type="text"
+                                    name="q"
+                                    placeholder="Search on LamborghiniGallery.com"
+                                />
+                            </form>
+                            <div class="search-btn">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div href="#" class="margin-left-brand"></div>
+                    <div class="brand-div">
+                        <a href="#" class="brand">
+                            <img src="img/logo.png" alt="logo image" />
+                        </a>
+                    </div>
+                    <ul id="nav-links">
+                        <li>
+                            <a
+                                href="#"
+                                style="
+                                    color: rgba(221, 179, 33, 0.7);
+                                    font-weight: bolder;
+                                    border: 0;
+                                "
+                                >Premium</a
+                            >
+                        </li>
+                        <li><a href="#">All Models</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Top Rated</a></li>
+                        <li><a href="#mobile-app">Mobile App</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
+                    </ul>
+                    <div class="search-div">
+                        <a href="#" onclick="changeSearchIcon()"
+                            ><img
+                                id="search-icon"
+                                src="outline_search_white_48dp.png"
+                                alt="search button"
+                        /></a>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="right">sign up</a>
+                    </div>
+                </nav>
+            </div>
+            
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="Aventador SVJ video crop.mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="top-overlay"></div>
+            <div class="bottom-overlay"></div>
+            <button
+                class="video-sound"
+                onclick="videoSound()"
+                type="button"
+            ></button>
+            <div class="title-section">
+                <div class="title__left animate__animated animate__fadeInLeft">
+                    Lamborghini
+                </div>
+                <div class="title__center"></div>
+                <div
+                    class="title__right animate__animated animate__fadeInRight"
+                >
+                    Gallery
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div id="owl-carousel-div" class="owl-carousel owl-theme">
+                <div class="slide slide-1">
+                    <div class="slide-content">
+                        <p class="owl-header">Ferruccio Lamborghini</p>
+                        <p class="owl-description">
+                            He was born in 1916 and developed a keen interest in
+                            Mechanics at an early age. It was in 1963 when he
+                            started the Lamborghini company.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide slide-3">
+                    <div class="slide-content">
+                        <p class="owl-header">Tractors</p>
+                        <p class="owl-description">
+                            The company still makes Tractors. In 1963, the
+                            Lamborghini started as a Tractor manufacturer but
+                            later shifted to the automobile business because of
+                            Enzo Ferrari.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide slide-2">
+                    <div class="slide-content">
+                        <p class="owl-header">Unique design</p>
+                        <p class="owl-description">
+                            The design of Lamborghini models is inspired by
+                            fighter planes. American F-22 and B-2 fighter planes
+                            were used as inspiration for designing the modern
+                            models.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide slide-4">
+                    <div class="slide-content">
+                        <p class="owl-header">Models</p>
+                        <p class="owl-description">
+                            There are 7,221 Lamborghini in the world as of now.
+                            For $5.6 Million, Veneno Roadster is the most
+                            expensive Lamborghini ever sold in the history of
+                            the manufacturer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="explore js--explore-btn">Explore the website</a>
+        </header>
+
+        <section class="section-why-us">
+            <div class="my-row">
+                <h2>WHY CHOOSE US</h2>
+                <p style="margin-bottom: 80px">
+                    We have more than <span><a href="#">100 000 photos</a></span> and over 
+                    <span><a href="#">1000 videos</a></span> with all your favorite
+                    models from Lamborghini. With technical descriptions. And interesting 
+                    facts we bet you didn't ever know.
+                </p>
+            </div>
+            <div class="flex-cols">
+                <div class="box">
+                    <h4>Easy & Fast</h4>
+                    <img src="img/easyfast-icon.png" alt="easy and fast icon">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vero doloribus, 
+                        exercitationem id unde molestias fugiat vel ullam commodi</p>
+                    <button><a href="#">Explore</a></button>
+                </div>
+                <div class="box" style="background: rgba(0, 0, 0, 0.5);">
+                    <h4>Premium Content</h4>
+                    <img src="img/sports-car-icon.png" alt="premium content icon">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vero doloribus, 
+                        exercitationem id unde molestias fugiat vel ullam commodi</p>
+                    <button class="full-btn" style="padding: 0.5rem 1.5rem;"><a href="#">Sign up now</a></button>
+                </div>
+                <div class="box">
+                    <h4>Satisfied 100%</h4>
+                    <img src="img/satisfaction-icon.png" alt="satisfaction icon">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vero doloribus, 
+                        exercitationem id unde molestias fugiat vel ullam commodi</p>
+                    <button><a href="#">See why</a></button>
+                </div>
+            </div>
+
+
+            <!-- <img class="section-1__img left-img" src="img/aventador-svj.jpg" alt="centenario roadster">
+            <img class="section-1__img right-img" src="img/centenario-roadster.jpg" alt="aventador svj"> -->
+        </section>
+        <footer>
+            <h2><span>Lamborghini</span> Gallery</h2>
+            <h3>&copy; Copyright 2021. All rights reserved.</h3>
+
+            <div class="links-div">
+                <div class="col">
+                    <h4>Useful links</h4>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Mobile App</a></li>
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Sign up</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Top Rated</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Top models</h4>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#">Aventador</a></li>
+                            <li><a href="#">Diablo</a></li>
+                            <li><a href="#">Gallardo</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Huracán</a></li>
+                            <li><a href="#">Miura</a></li>
+                            <li><a href="#">Murcielago</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Sián</a></li>
+                            <li><a href="#">Terzo Millennio</a></li>
+                            <li><a href="#">Urus</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Social</h4>
+                    <div class="links links-row">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></a></i></li>
+                            <li><a href="#"><i class="fa fa-twitter"></a></i></li>
+                            <li><a href="#"><i class="fa fa-instagram"></a></i></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></a></i></li>
+                            <li><a href="#"><i class="fa fa-youtube"></a></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            var video = document.getElementById("hero-video");
+            var soundBtn = document.querySelector(".video-sound");
+
+            function videoSound() {
+                video.muted = !video.muted;
+                if (video.muted) {
+                    soundBtn.style.backgroundImage =
+                        "url('outline_volume_off_white_48dp.png')";
+                } else {
+                    soundBtn.style.backgroundImage =
+                        "url('outline_volume_up_white_48dp.png')";
+                }
+            }
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    autoplayTimeout: 15000,
+                    smartSpeed: 1000,
+                    autoplayHoverPause: true,
+                    animateIn: "fadeIn",
+                    animateOut: "fadeOut",
+                });
+            });
+        </script>
+        <script>
+            function changeSearchIcon() {
+                if (
+                    document
+                        .getElementById("search-icon")
+                        .getAttribute("src") == "outline_close_white_48dp.png"
+                ) {
+                    document.querySelector(".main-nav").style.position = "relative";
+                    document.querySelector(".megamenu").style.transform =
+                        "translateY(-100%)";
+                    document.querySelector(".megamenu").style.opacity = "0";
+                    document.getElementById("search-icon").src =
+                        "outline_search_white_48dp.png";
+
+                    var list = document.getElementById("nav-links");
+                    var links = list.getElementsByTagName("a");
+                    for (var i = 0; i < links.length; ++i)
+                        links[i].classList.remove("innactive-link");
+
+                    document
+                        .getElementById("megamenu__h3")
+                        .classList.remove("animate__animated");
+                    document
+                        .getElementById("megamenu__h3")
+                        .classList.remove("animate__fadeIn");
+
+                    document
+                        .getElementById("megamenu__h2")
+                        .classList.remove("animate__animated");
+                    document
+                        .getElementById("megamenu__h2")
+                        .classList.remove("animate__fadeInLeft");
+                } else {
+                    document.querySelector(".main-nav").style.position = "fixed";
+                    document.querySelector(".nav-container").style.background = "transparent";
+                    document.querySelector(".megamenu").style.transform =
+                        "translateY(0%)";
+                    document.querySelector(".megamenu").style.opacity = "1";
+                    document.getElementById("search-icon").src =
+                        "outline_close_white_48dp.png";
+
+                    var list = document.getElementById("nav-links");
+                    var links = list.getElementsByTagName("a");
+                    for (var i = 0; i < links.length; ++i)
+                        links[i].classList.add("innactive-link");
+
+                    document
+                        .getElementById("megamenu__h3")
+                        .classList.add("animate__animated");
+                    document
+                        .getElementById("megamenu__h3")
+                        .classList.add("animate__fadeIn");
+
+                    document
+                        .getElementById("megamenu__h2")
+                        .classList.add("animate__animated");
+                    document
+                        .getElementById("megamenu__h2")
+                        .classList.add("animate__fadeInLeft");
+                }
+            }
+        </script>
+        <script>
+            var navbar = document.querySelector(".nav-container");
+            window.onscroll = function(e) {
+                if (
+                    document
+                        .getElementById("search-icon")
+                        .getAttribute("src") == "outline_close_white_48dp.png"
+                ) {
+                    return;
+                }
+                var amount = $(document).scrollTop();
+                if (amount <= 0.2 * window.innerHeight) {
+                    navbar.style.visibility = "visible";
+                }
+                if (amount > 0.2 * window.innerHeight) {
+                    navbar.style.visibility = "hidden";
+                }
+                if (amount > 0.8 * window.innerHeight) {
+                    navbar.style.visibility = "visible";
+                    navbar.style.position = "fixed";
+                    navbar.style.background = "rgb(23, 23, 23)";
+                } else {
+                    navbar.style.position = "absolute";
+                    navbar.style.background = "transparent";
+                }
+            }
+        </script>
+        <script>
+            /* SCROLL ON BUTTON */
+            $('.js--explore-btn').click(function() {
+                $('html, body').animate({scrollTop: $('.section-why-us').offset().top - 99}, 500);
+            });
+        </script>
+    </body>
+</html>
