@@ -58,13 +58,14 @@
                     <ul id="nav-links">
                         <li>
                             <a
+                                class="js--luxury-btn"
                                 href="#"
                                 style="
                                     color: rgba(221, 179, 33, 0.7);
                                     font-weight: bolder;
                                     border: 0;
                                 "
-                                >Premium</a
+                                >Luxury</a
                             >
                         </li>
                         <li><a href="#">All Models</a></li>
@@ -83,7 +84,7 @@
                         /></a>
                     </div>
                     <div class="right">
-                        <a href="#" class="right">sign up</a>
+                        <a href="#" class="right js--signup-btn">sign up</a>
                     </div>
                 </nav>
             </div>
@@ -183,7 +184,7 @@
                 </div>
                 <div class="box" style="background: rgba(0, 0, 0, 0.5);">
                     <h4>Premium Content</h4>
-                    <img src="img/sports-car-icon.png" alt="premium content icon">
+                    <img src="img/premium-content.png" alt="premium content icon" style="height: 100px; margin-top: 25px">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vero doloribus, 
                         exercitationem id unde molestias fugiat vel ullam commodi</p>
                     <button class="full-btn" style="padding: 0.5rem 1.5rem;"><a href="#">Sign up now</a></button>
@@ -196,11 +197,100 @@
                     <button><a href="#">See why</a></button>
                 </div>
             </div>
-
-
-            <!-- <img class="section-1__img left-img" src="img/aventador-svj.jpg" alt="centenario roadster">
-            <img class="section-1__img right-img" src="img/centenario-roadster.jpg" alt="aventador svj"> -->
         </section>
+
+        <section class="section-images">
+            <div class="overlay-section"></div>
+            <img src="img/aventador-svj.jpg" alt="aventador svj" class="img-left">
+            <div class="section-images__right">
+                <h3>High Quality <span>...</span></h3>
+                <p>We value the quality, so everything in the Gallery is <strong>FHD</strong>, <strong>2K</strong> and 
+                even <strong>4K</strong>. Everything is chosen carefully because we offer premium services.</p>
+            </div>
+            <img src="img/centenario-roadster.jpg" alt="aventador svj" class="img-right">
+            <div class="section-images__left">
+                <h3><span>...</span> Everywhere <span>...</span></h3>
+                <p>Of course you can download everything at the highest available quality, so you can enjoy our 
+                    services even when you are offline. Anything less is not acceptable, is it? Simple as that.</p>
+            </div>
+            <img src="img/urus.jpg" alt="aventador svj" class="img-left">
+            <div class="section-images__right right-2">
+                <h3><span>...</span> And always</h3>
+                <p>Of course you can download everything at the highest available quality, so you can enjoy our 
+                    services even when you are offline. Anything less is not acceptable, is it? Simple as that.</p>
+            </div>
+        </section>
+
+        <section class="section-models">
+            <div class="photos-carousel owl-theme">
+                <div class="slide slide-1">
+                    <div class="slide-content">
+                        
+                    </div>
+                </div>
+
+                <div class="slide slide-2">
+                    <div class="slide-content">
+                        
+                    </div>
+                </div>
+
+                <div class="slide slide-3">
+                    <div class="slide-content">
+                        
+                    </div>
+                </div>
+
+                <div class="slide slide-4">
+                    <div class="slide-content">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-plans" id="plans-section">
+            <h2>SUBSCRIPTION PLANS</h2>
+            <h3>Choose what fits you best.</h3>
+            <div class="flex-cols" style="margin-bottom: 50px">
+                <div class="plan-box">
+                    <p>Personal plan</p>
+                    <h4>Basic</h4>
+                    <h5><span>free</span></h5>
+                    <h6 style="visibility: hidden"><span>free</span></h6>
+                    <ul>
+                        <li><i class="fa fa-check"></i>Around 1000 photos and 50 videos</li>
+                        <li><i class="fa fa-check"></i>Available qualities: FHD</li>
+                    </ul>
+                    <button><a href="#">Sign up now</a></button>
+                </div>
+                <div class="plan-box">
+                    <p>Personal plan</p>
+                    <h4>Luxury</h4>
+                    <h5><span>$ 1.99 </span>/ month</h5>
+                    <h6><span>$ 19.99 </span>/ year</h6>
+                    <ul>
+                        <li><i class="fa fa-check"></i>Access to the full Gallery</li>
+                        <li><i class="fa fa-check"></i>Available qualities: FHD, 2K, 4K</li>
+                        <li><i class="fa fa-check"></i>Downloadable content for offline and unlimited use</li>
+                    </ul>
+                    <button class="full-btn"><a href="#">Sign up now</a></button>
+                </div>
+                <div class="plan-box">
+                    <p>Plan for 2 people</p>
+                    <h4>Luxury Coupé</h4>
+                    <h5><span>$ 2.99 </span>/ month</h5>
+                    <h6><span>$ 29.99 </span>/ year</h6>
+                    <ul>
+                        <li><i class="fa fa-check"></i>Access to the full Gallery</li>
+                        <li><i class="fa fa-check"></i>Available qualities: FHD, 2K, 4K</li>
+                        <li><i class="fa fa-check"></i>Downloadable content for offline and unlimited use</li>
+                    </ul>
+                    <button><a href="#">Sign up now</a></button>
+                </div>
+            </div>
+        </section>
+
         <footer>
             <h2><span>Lamborghini</span> Gallery</h2>
             <h3>&copy; Copyright 2021. All rights reserved.</h3>
@@ -279,6 +369,20 @@
         <script>
             $(document).ready(function () {
                 $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    autoplayTimeout: 15000,
+                    smartSpeed: 1000,
+                    autoplayHoverPause: true,
+                    animateIn: "fadeIn",
+                    animateOut: "fadeOut",
+                });
+            });
+            $(document).ready(function () {
+                $(".photos-carousel").owlCarousel({
                     items: 1,
                     loop: true,
                     dots: true,
@@ -385,6 +489,12 @@
             /* SCROLL ON BUTTON */
             $('.js--explore-btn').click(function() {
                 $('html, body').animate({scrollTop: $('.section-why-us').offset().top - 99}, 500);
+            });
+            $('.js--signup-btn').click(function() {
+                $('html, body').animate({scrollTop: $('.section-plans').offset().top - 99}, 750);
+            });
+            $('.js--luxury-btn').click(function() {
+                $('html, body').animate({scrollTop: $('.section-plans').offset().top - 99}, 750);
             });
         </script>
     </body>
